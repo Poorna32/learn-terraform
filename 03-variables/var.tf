@@ -52,3 +52,8 @@ variable "common" {}
 output "common" {
   value = var.common
 }
+
+#data in terraform is 3 types
+#1.string -  need quoting ,only double quotes , TF doesn't supports single quotes
+#2.numbers - no quotes
+#3.boolean - no quotes
