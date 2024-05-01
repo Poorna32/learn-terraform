@@ -29,7 +29,7 @@ variable "instance_types" {
 
 
     mysql = {
-      instance_type = "t3.small "
+      instance_type = "t3.small"
     }
 
 
