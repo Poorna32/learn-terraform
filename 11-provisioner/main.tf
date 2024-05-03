@@ -13,7 +13,7 @@ resource "aws_instance" "test" {
     }
 
     inline = [
-      "dnf install nginx -y",
+      "sudo install nginx -y",
       "sudo systemctl start nginx"
     ]
   }
