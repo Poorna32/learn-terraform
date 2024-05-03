@@ -3,7 +3,7 @@ resource "aws_instance" "test" {
   instance_type = "t3.small"
   vpc_security_group_ids = [data.aws_security_group.selected.id]
 
-  provisioner "remote-exec" {
+  provision er "remote-exec" {
 
     connection {
       type     = "ssh"
