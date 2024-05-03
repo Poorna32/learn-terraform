@@ -50,8 +50,4 @@ resource "null_resource" "provisioner" {
       "sudo systemctl start nginx"
     ]
   }
-
-}
-
-
 }
