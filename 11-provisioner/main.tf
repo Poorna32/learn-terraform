@@ -2,6 +2,7 @@ resource "aws_instance" "test" {
   ami           = "ami-090252cbe067a9e58"
   instance_type = "t3.small"
   vpc_security_group_ids = [data.aws_security_group.selected.id]
+
   provisioner "remote-exec" {
 
     connection {
@@ -13,7 +14,7 @@ resource "aws_instance" "test" {
 
     inline = [
       "sudo dnf install nginx -y",
-      "sudo systemctl stop nginx"
+      "sudo systemctl start nginx"
     ]
   }
 }
