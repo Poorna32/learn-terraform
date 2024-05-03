@@ -47,7 +47,7 @@ output "env" {
     value = var.env
 }
 
-output "env-name" {
+output "env-Name" {
   value = "Environment Name - ${var.env} - ${(upper(var.env)}"
 }
 

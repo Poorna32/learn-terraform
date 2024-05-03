@@ -21,7 +21,7 @@ resource "aws_instance" "test" {
 }
 
 data "aws_security_group" "selected" {
-   name = "allow-all"
+   Name = "allow-all"
 }
 
 #decouple provisioner in following scenarios

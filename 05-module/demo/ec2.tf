@@ -3,8 +3,8 @@ resource "aws_instance" "test" {
   instance_type = var.instance_type
 
   tags = {
-    name = var.name
+    Name = var.Name
   }
 }
-variable "name" {}
+variable "Name" {}
 variable "instance_type" {}

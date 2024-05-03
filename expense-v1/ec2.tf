@@ -3,7 +3,7 @@ resource "aws_instance" "frontend" {
   instance_type = var.instance_type
   vpc_security_group_ids = var.security_groups
   tags = {
-    name = "frontend"
+    Name = "frontend"
   }
 }
 
@@ -14,7 +14,7 @@ resource "aws_instance" "backend" {
   instance_type = var.instance_type
   vpc_security_group_ids = var.security_groups
   tags = {
-    name = "backend"
+    Name = "backend"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_instance" "mysql" {
   instance_type = var.instance_type
   vpc_security_group_ids = var.security_groups
   tags = {
-    name = "mysql"
+    Name = "mysql"
   }
 }
 
