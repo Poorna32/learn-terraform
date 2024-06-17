@@ -1,4 +1,4 @@
-module "demo-1" {
+  `module "demo-1" {
   source = "./demo"
   Name = "demo-1"
   instance_type = "t3.micro"
